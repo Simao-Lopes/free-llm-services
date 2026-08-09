@@ -20,6 +20,8 @@ See **[providers.json](providers.json)** for the machine-readable source of trut
 
 See **[/reports](reports/)** for the dated weekly verification reports.
 
+See **[docs/hermes-integration.md](docs/hermes-integration.md)** for the exact config/keys to wire these free tiers into a Hermes gateway (reference only — author has not applied it).
+
 ## 🔍 How verification works
 
 `check.py` runs weekly (via Hermes cron) and, **without touching real API keys**, verifies each provider honestly:
