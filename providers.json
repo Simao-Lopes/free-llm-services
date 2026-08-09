@@ -1,5 +1,5 @@
 {
-  "last_verified": "2026-08-09 07:20 UTC",
+  "last_verified": "2026-08-09 07:21 UTC",
   "providers": [
     {
       "name": "OpenRouter",
@@ -18,7 +18,7 @@
       "rate_limits": "20 RPM, 50 RPD/model (1000 RPD with $10 top-up)",
       "notes": "Some free providers may log prompts for training. Best variety from one key.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:08+00:00"
+      "last_checked": "2026-08-09T07:21:33+00:00"
     },
     {
       "name": "Google AI Studio (Gemini)",
@@ -37,7 +37,7 @@
       "rate_limits": "Flash: 15-30 RPM, 1500 RPD. Pro: 5 RPM, 50 RPD",
       "notes": "Free tier NOT available in EU/UK/Switzerland. Free-tier prompts may be used by Google for improvement.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:08+00:00"
+      "last_checked": "2026-08-09T07:21:33+00:00"
     },
     {
       "name": "Groq",
@@ -56,7 +56,7 @@
       "rate_limits": "30 RPM, 1000 RPD (reduced from 14400 in 2026)",
       "notes": "Llama 4 Maverick deprecated. Rate limits reduced in 2026.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:09+00:00"
+      "last_checked": "2026-08-09T07:21:34+00:00"
     },
     {
       "name": "Cerebras",
@@ -73,7 +73,7 @@
       "rate_limits": "5-15 RPM, 30K TPM, 1M TPD",
       "notes": "Payment method REQUIRED even for free tier.",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:09+00:00"
+      "last_checked": "2026-08-09T07:21:34+00:00"
     },
     {
       "name": "GitHub Models",
@@ -96,7 +96,7 @@
       "rate_limits": "10-15 RPM, 50-150 RPD per model; 8K in / 4K out per request",
       "notes": "",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:09+00:00"
+      "last_checked": "2026-08-09T07:21:34+00:00"
     },
     {
       "name": "Mistral AI (Experiment tier)",
@@ -116,7 +116,7 @@
       "rate_limits": "~1 RPS, 500K TPM",
       "notes": "Prompt data may be used to improve models (opt-in for experiments).",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:10+00:00"
+      "last_checked": "2026-08-09T07:21:35+00:00"
     },
     {
       "name": "Cloudflare Workers AI",
@@ -135,7 +135,7 @@
       "rate_limits": "10K neurons/day (shared pool)",
       "notes": "Neuron = per-token compute unit. Edge-deployed.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:13+00:00"
+      "last_checked": "2026-08-09T07:21:38+00:00"
     },
     {
       "name": "Cohere",
@@ -154,7 +154,7 @@
       "rate_limits": "20 RPM, 1000 calls/month",
       "notes": "NON-COMMERCIAL use ONLY.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:13+00:00"
+      "last_checked": "2026-08-09T07:21:38+00:00"
     },
     {
       "name": "NVIDIA NIM",
@@ -173,7 +173,7 @@
       "rate_limits": "~40 RPM",
       "notes": "",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:14+00:00"
+      "last_checked": "2026-08-09T07:21:39+00:00"
     },
     {
       "name": "Hugging Face",
@@ -193,7 +193,7 @@
       "rate_limits": "100K credits/month free (OpenAI-compatible router)",
       "notes": "",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:14+00:00"
+      "last_checked": "2026-08-09T07:21:39+00:00"
     },
     {
       "name": "AI studio / Aion Labs",
@@ -212,7 +212,7 @@
       "rate_limits": "15 RPM, 20K TPD",
       "notes": "",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:14+00:00"
+      "last_checked": "2026-08-09T07:21:39+00:00"
     },
     {
       "name": "Ollama Cloud",
@@ -233,7 +233,7 @@
       "rate_limits": "Session limits reset ~5h, weekly limits every 7 days (unpublished)",
       "notes": "",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:14+00:00"
+      "last_checked": "2026-08-09T07:21:39+00:00"
     },
     {
       "name": "Z AI (Zhipu AI / BigModel)",
@@ -251,7 +251,7 @@
       "rate_limits": "1 concurrent request",
       "notes": "",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:14+00:00"
+      "last_checked": "2026-08-09T07:21:39+00:00"
     },
     {
       "name": "SambaNova",
@@ -270,7 +270,7 @@
       "rate_limits": "20 RPM, 20 RPD, 200K TPD",
       "notes": "Small daily request cap.",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:16+00:00"
+      "last_checked": "2026-08-09T07:21:40+00:00"
     },
     {
       "name": "SiliconFlow",
@@ -287,7 +287,7 @@
       "rate_limits": "30 RPM, 60K TPM",
       "notes": "",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:17+00:00"
+      "last_checked": "2026-08-09T07:21:42+00:00"
     },
     {
       "name": "OVHcloud AI Endpoints",
@@ -306,7 +306,7 @@
       "rate_limits": "2 RPM per IP per model (anonymous); 400 RPM with API key (pay-as-you-go)",
       "notes": "No signup required.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:21+00:00"
+      "last_checked": "2026-08-09T07:21:47+00:00"
     },
     {
       "name": "ModelScope (Alibaba)",
@@ -323,7 +323,7 @@
       "rate_limits": "2000 RPD total, 500 RPD/model (dynamic)",
       "notes": "Real-name verification required.",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:21+00:00"
+      "last_checked": "2026-08-09T07:21:47+00:00"
     },
     {
       "name": "LLM7.io",
@@ -343,7 +343,7 @@
       "rate_limits": "30 RPM (120 RPM with token)",
       "notes": "",
       "status": "needs_review",
-      "last_checked": "2026-08-09T07:20:22+00:00"
+      "last_checked": "2026-08-09T07:21:49+00:00"
     },
     {
       "name": "Kilo Code",
@@ -361,7 +361,7 @@
       "rate_limits": "~200 req/hr",
       "notes": "Some trial models log prompts (NVIDIA).",
       "status": "ok",
-      "last_checked": "2026-08-09T07:20:22+00:00"
+      "last_checked": "2026-08-09T07:21:49+00:00"
     }
   ]
 }
