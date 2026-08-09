@@ -1,0 +1,367 @@
+{
+  "last_verified": "2026-08-09 07:19 UTC",
+  "providers": [
+    {
+      "name": "OpenRouter",
+      "site": "https://openrouter.ai/keys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "gateway",
+      "free_tier_desc": "~22 free models (:free suffix), 20 RPM, 50 RPD per model. 1000 RPD after one-time $10+ top-up. One key routes across many underlying providers with failover.",
+      "models": [
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "openai/gpt-oss-20b:free",
+        "google/gemma-4-31b-it:free",
+        "inclusionai/ling-3.0-flash:free"
+      ],
+      "rate_limits": "20 RPM, 50 RPD/model (1000 RPD with $10 top-up)",
+      "notes": "Some free providers may log prompts for training. Best variety from one key.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:15+00:00"
+    },
+    {
+      "name": "Google AI Studio (Gemini)",
+      "site": "https://aistudio.google.com/app/apikey",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": "partial",
+      "category": "provider-api",
+      "free_tier_desc": "Permanent free tier. Gemini Flash models: 15-30 RPM, 1500 RPD, 1M token context.",
+      "models": [
+        "gemini-3.6-flash",
+        "gemini-3.5-flash",
+        "gemini-2.5-flash",
+        "gemini-2.5-pro (5 RPM/50 RPD)"
+      ],
+      "rate_limits": "Flash: 15-30 RPM, 1500 RPD. Pro: 5 RPM, 50 RPD",
+      "notes": "Free tier NOT available in EU/UK/Switzerland. Free-tier prompts may be used by Google for improvement.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:15+00:00"
+    },
+    {
+      "name": "Groq",
+      "site": "https://console.groq.com/keys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Ultra-fast LPU inference. Llama 3.3 70B, gpt-oss, Qwen. ~320 tok/s.",
+      "models": [
+        "llama-3.3-70b-versatile (30 RPM, 1000 RPD)",
+        "llama-3.1-8b-instant (30 RPM, 14400 RPD)",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b"
+      ],
+      "rate_limits": "30 RPM, 1000 RPD (reduced from 14400 in 2026)",
+      "notes": "Llama 4 Maverick deprecated. Rate limits reduced in 2026.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:16+00:00"
+    },
+    {
+      "name": "Cerebras",
+      "site": "https://cloud.cerebras.ai/",
+      "free_tier": true,
+      "credit_card_required": true,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Ultra-fast inference, 1M tokens/day free cap, 64K context on free tier.",
+      "models": [
+        "gpt-oss-120b",
+        "gemma-4-31b (text+image)"
+      ],
+      "rate_limits": "5-15 RPM, 30K TPM, 1M TPD",
+      "notes": "Payment method REQUIRED even for free tier.",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:17+00:00"
+    },
+    {
+      "name": "GitHub Models",
+      "site": "https://github.com/marketplace/models",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "gateway",
+      "free_tier_desc": "Free prototyping for all GitHub users. 45+ models incl GPT-5, GPT-4.1, Llama, DeepSeek-R1, Mistral. Tied to GitHub account.",
+      "models": [
+        "gpt-5",
+        "gpt-4.1",
+        "gpt-4.1-mini",
+        "gpt-4o",
+        "o4-mini",
+        "DeepSeek-R1",
+        "Llama-4-Scout",
+        "Mistral-Small-3.1"
+      ],
+      "rate_limits": "10-15 RPM, 50-150 RPD per model; 8K in / 4K out per request",
+      "notes": "",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:17+00:00"
+    },
+    {
+      "name": "Mistral AI (Experiment tier)",
+      "site": "https://console.mistral.ai/api-keys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "~1B tokens/month on Experiment plan. Mistral Medium/Small/Large, Codestral.",
+      "models": [
+        "Mistral Medium 3.5",
+        "Mistral Small 4",
+        "Mistral Large 3",
+        "Codestral",
+        "Ministral 8B/14B"
+      ],
+      "rate_limits": "~1 RPS, 500K TPM",
+      "notes": "Prompt data may be used to improve models (opt-in for experiments).",
+      "status": "unreachable",
+      "last_checked": "2026-08-09T07:19:18+00:00"
+    },
+    {
+      "name": "Cloudflare Workers AI",
+      "site": "https://dash.cloudflare.com/profile/api-tokens",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": "partial",
+      "category": "edge",
+      "free_tier_desc": "10,000 Neurons/day free, 50+ models (Llama, gpt-oss, Kimi, Gemma, DeepSeek-R1).",
+      "models": [
+        "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "@cf/meta/llama-4-scout-17b",
+        "@cf/openai/gpt-oss-120b",
+        "@cf/moonshotai/kimi-k2.7-code"
+      ],
+      "rate_limits": "10K neurons/day (shared pool)",
+      "notes": "Neuron = per-token compute unit. Edge-deployed.",
+      "status": "unreachable",
+      "last_checked": "2026-08-09T07:19:21+00:00"
+    },
+    {
+      "name": "Cohere",
+      "site": "https://dashboard.cohere.com/api-keys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": "partial",
+      "category": "provider-api",
+      "free_tier_desc": "Free 'Trial' API key. 1000 calls/month. Command A/R family.",
+      "models": [
+        "Command A+ (218B)",
+        "Command A (111B)",
+        "Command R+",
+        "Aya Expanse 32B"
+      ],
+      "rate_limits": "20 RPM, 1000 calls/month",
+      "notes": "NON-COMMERCIAL use ONLY.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:21+00:00"
+    },
+    {
+      "name": "NVIDIA NIM",
+      "site": "https://build.nvidia.com/explore/discover",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": "partial",
+      "category": "provider-api",
+      "free_tier_desc": "Free with NVIDIA Developer Program. 100+ models, rate-limited but no daily token cap.",
+      "models": [
+        "deepseek-ai/deepseek-v4-flash (1M ctx)",
+        "nvidia/nemotron-3-super-120b",
+        "meta/llama-3.3-70b-instruct",
+        "openai/gpt-oss-120b"
+      ],
+      "rate_limits": "~40 RPM",
+      "notes": "",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:22+00:00"
+    },
+    {
+      "name": "Hugging Face",
+      "site": "https://huggingface.co/settings/tokens",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": "partial",
+      "category": "gateway",
+      "free_tier_desc": "$0.10/month inference credits free; thousands of OSS models via router.huggingface.co/v1.",
+      "models": [
+        "Meta-Llama-3.1-8B",
+        "gemma-3-4b",
+        "phi-4",
+        "Qwen2.5-7B",
+        "thousands of community models"
+      ],
+      "rate_limits": "100K credits/month free (OpenAI-compatible router)",
+      "notes": "",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:22+00:00"
+    },
+    {
+      "name": "AI studio / Aion Labs",
+      "site": "https://www.aionlabs.ai",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Permanent free tier, roleplay/storytelling focused. 15 RPM, 20K tokens/day.",
+      "models": [
+        "Aion 2.5",
+        "Aion 3.0",
+        "Aion 3.0 Mini",
+        "Aion-RP 1.0"
+      ],
+      "rate_limits": "15 RPM, 20K TPD",
+      "notes": "",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:22+00:00"
+    },
+    {
+      "name": "Ollama Cloud",
+      "site": "https://ollama.com/settings/keys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": false,
+      "category": "provider-api",
+      "free_tier_desc": "400+ models, free 'light usage' tier measured by GPU time (not tokens). Not OpenAI SDK-compatible (Ollama API).",
+      "models": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash (1M ctx)",
+        "minimax-m3",
+        "gpt-oss:120b",
+        "nemotron-3-ultra",
+        "qwen3.5:397b"
+      ],
+      "rate_limits": "Session limits reset ~5h, weekly limits every 7 days (unpublished)",
+      "notes": "",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:23+00:00"
+    },
+    {
+      "name": "Z AI (Zhipu AI / BigModel)",
+      "site": "https://open.bigmodel.cn/usercenter/apikeys",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Permanent free models, GLM-4.7-Flash reasoning. China-based.",
+      "models": [
+        "GLM-4.7-Flash (200K ctx)",
+        "GLM-4.5-Flash",
+        "GLM-4.6V-Flash (text+image)"
+      ],
+      "rate_limits": "1 concurrent request",
+      "notes": "",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:23+00:00"
+    },
+    {
+      "name": "SambaNova",
+      "site": "https://cloud.sambanova.ai/apis",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Free tier persists indefinitely: 20 RPM, 20 RPD, 200K TPD per model. Ultra-fast RDU. +$5 trial credit (30d).",
+      "models": [
+        "DeepSeek-V3.1",
+        "Meta-Llama-3.3-70B",
+        "gpt-oss-120b",
+        "MiniMax-M2.7"
+      ],
+      "rate_limits": "20 RPM, 20 RPD, 200K TPD",
+      "notes": "Small daily request cap.",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:25+00:00"
+    },
+    {
+      "name": "SiliconFlow",
+      "site": "https://cloud.siliconflow.cn/account/ak",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Permanently free models, 200+ paid also. China-based.",
+      "models": [
+        "Qwen/Qwen3-8B",
+        "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+      ],
+      "rate_limits": "30 RPM, 60K TPM",
+      "notes": "",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:26+00:00"
+    },
+    {
+      "name": "OVHcloud AI Endpoints",
+      "site": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "gateway",
+      "free_tier_desc": "Permanent free ANONYMOUS tier: 2 RPM per IP per model, no signup/API key. 20+ open-weight models hosted in EU (GDPR-friendly).",
+      "models": [
+        "Qwen3.5-397B-A17B",
+        "gpt-oss-120b",
+        "Meta-Llama-3_3-70B",
+        "Mistral-Small-3.2-24B"
+      ],
+      "rate_limits": "2 RPM per IP per model (anonymous); 400 RPM with API key (pay-as-you-go)",
+      "notes": "No signup required.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:32+00:00"
+    },
+    {
+      "name": "ModelScope (Alibaba)",
+      "site": "https://modelscope.cn/my/myaccesstoken",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "provider-api",
+      "free_tier_desc": "Free API-Inference, 2000 requests/day total, <=500/model. Requires Alibaba Cloud binding + real-name verification (KYC).",
+      "models": [
+        "Qwen/Qwen3.5-35B-A3B",
+        "Qwen/Qwen3.5-27B"
+      ],
+      "rate_limits": "2000 RPD total, 500 RPD/model (dynamic)",
+      "notes": "Real-name verification required.",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:32+00:00"
+    },
+    {
+      "name": "LLM7.io",
+      "site": "https://token.llm7.io",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "gateway",
+      "free_tier_desc": "Zero-friction gateway, no registration for basic access. 30+ models, GDPR-compliant.",
+      "models": [
+        "deepseek-r1-0528",
+        "deepseek-v3-0324",
+        "gemini-2.5-flash-lite",
+        "gpt-4o-mini",
+        "qwen2.5-coder-32b"
+      ],
+      "rate_limits": "30 RPM (120 RPM with token)",
+      "notes": "",
+      "status": "needs_review",
+      "last_checked": "2026-08-09T07:19:34+00:00"
+    },
+    {
+      "name": "Kilo Code",
+      "site": "https://kilo.ai",
+      "free_tier": true,
+      "credit_card_required": false,
+      "openai_compatible": true,
+      "category": "gateway",
+      "free_tier_desc": "Free models via kilo-auto/free auto-router (~200 req/hr). List changes frequently.",
+      "models": [
+        "nvidia/nemotron-3-ultra-550b",
+        "stepfun/step-3.7-flash",
+        "openrouter/free"
+      ],
+      "rate_limits": "~200 req/hr",
+      "notes": "Some trial models log prompts (NVIDIA).",
+      "status": "ok",
+      "last_checked": "2026-08-09T07:19:35+00:00"
+    }
+  ]
+}
